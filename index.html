@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8"> <!--Standardizare pentru text ca si ISO-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--adaptare pt ecran in functie de device-->
+    <title>AI Cafeluts</title> <!--titlul din bara de sus-->
+    <link rel = "stylesheet" href = "styles.css" >
+    <link rel="icon" type="image/png" href="top.png">
+</head>
+<body>
+   
+    <div class="content"> <!--div e folosit pentru a grupa toate elementele, pentru ca atunci cand fac modiicari sa pot edita toate o data, nu de mii de ori, iar class = "content" atribuieste un nume divului, ca atunci cand il mentionez sa folosesc doar container si sa se aplice peste tot ce e inclus-->
+   
+
+    <img id="cafeluts_mad" src="cafeluts_mad.png" alt="Avatar Cafeluts">
+
+    <!-- partea din dreapta: chat + input -->
+    <div class="right-side">
+        <div id="zona_de_conversatie"></div>
+        
+        <!-- Grupăm input + buton într-un div separat -->
+        <div class="input-area">
+            <input type="text" id="input" placeholder="Pune-i o întrebare la Cafeluts...">
+            <button id="buton_de_send">Trimite</button>
+        </div>
+    </div>
+</div>
+ 
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+
+* { /* trebuie resetate deoarece fiecare element (cum ar fi h1, etc) au marginul si paddingul lor prestabilit si ne incurca*/
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+   
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* am selectat un font pentru aceasta pagina*/
+      background-image: url('fundall.png');
+     background-size: cover;
+     background-size: cover;     /* întinde imaginea să acopere tot ecranul */
+    min-height: 100vh;  /* încadrează div-ul pe tot ecranul*/
+      background-position: center; /* poziționează imaginea pe centru */
+  background-repeat: no-repeat; /* să nu se repete imaginea */
+
+    display: flex;                 /* TRB SA MA MAI DOCUMENTEZ */
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.content {
+  /* Alb curat pentru interior */
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 15px; /* Colțuri rotunjite */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Umbră discretă */
+    width: 95%;
+    max-width: 1600px;
+    
+
+
+    display: flex; /* Facem să stea elementele unul lângă altul: pisica + zona de chat */
+    align-items: flex-start; /* Aliniere sus */
+    gap: 60px; /* Spațiu între pisică și chat */
+}
+
+#cafeluts_mad {
+    width: 600px;
+    height: 600px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+     transition: all 0.6s ease;
+}
+
+
+/* Zona de conversație și input-uri */
+.right-side {
+    flex: 1; /* Ocupă restul spațiului disponibil */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Zona de mesaje */
+#zona_de_conversatie {
+    background-color: #edebeb;
+    border-radius: 10px;
+    padding: 15px;
+    height: 500px; /* INĂLȚIME FIXĂ */
+    overflow-y: auto; /* Scroll când sunt prea multe mesaje */
+    overflow-x: hidden; /* Fără scroll pe orizontală */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; /* 🛑 NU PERMITE să se micșoreze sau să crească zona */
+}
+
+
+/* Mesajele utilizatorului */
+.user-message {
+    align-self: flex-end; /* Aliniere la dreapta */
+    background-color: #1178c6; /* Albastru deschis */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 70%;
+    color: #d6e7fa;
+}
+
+.mesaj-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.avatar-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(54, 53, 53); /* Fundal alb în spatele avatarului */
+  padding: 5px; /* Spațiu mic între imagine și cerc */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Mică umbră ca să pară 3D */
+  margin-right: 10px;
+  object-fit: cover; /* Ca imaginea să stea frumos încadrată */
+}
+
+.ai-message {
+  background-color: #e8fce8;
+  color: #2c3e50;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 70%;
+  font-size: 16px;
+}
+
+.user-message {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 70%;
+  font-size: 16px;
+  margin-left: auto; /* Mută mesajele tale spre dreapta */
+  margin-right: 10px; /* Spațiu față de marginea dreaptă */
+}
+
+
+.input-area {
+  margin-top: 20px;
+  display: flex; /* Flexbox */
+  align-items: center; /* Centrează pe verticală */
+  justify-content: center; /* Toate la mijloc */
+  gap: 10px; /* Spațiu între input și buton */
+}
+
+#input {
+  flex: 1; /* Inputul ia tot spațiul disponibil */
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  max-width: 600px;
+}
+
+ /* buton ------------------------------------------*/
+#buton_de_send {
+  padding: 20px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#buton_de_send:hover {
+  background-color: #347737;
+}
