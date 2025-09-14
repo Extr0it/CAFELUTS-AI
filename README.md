@@ -1,6 +1,6 @@
 Căfeluț este un asistent virtual interactiv cu personalitate
 proprie, creat integral de mine – de la concept grafic, animație și
-comportament, până la integrarea cu inteligență artificială. 
+comportament, până la integrarea cu inteligență artificială, a fost conceput mai mult pe ideea de AI friendly pentru copii, distrandu i pe fratii mei mai mici ca pisica noastra vorbeste.
 
 Toate
 animațiile și expresiile faciale au fost desenate și animate
